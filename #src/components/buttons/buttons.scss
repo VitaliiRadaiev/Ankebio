@@ -1,0 +1,22 @@
+.btn {
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-flex;
+    min-height: 5.2rem;
+    padding: 1.2rem 2.4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $mainColor;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.45em;
+    transition: transform .1s ease;
+
+    &:active {
+        transform: scale(0.98);
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ankebio</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+	<script>
+		let element = document.querySelector('html');
+		if (element) {
+			const setFontSize = () => {
+					let value = 10 / 1920 * element.clientWidth;
+					element.style.fontSize = value + 'px';
+				}
+
+				setFontSize();
+
+				window.addEventListener('resize', setFontSize);
+		}
+	</script>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-loaded .preloader {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-loaded .preloader:before {
+			display: none;
+		}
+
+		.preloader {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			-webkit-transition: all .6s ease .2s;
+			-o-transition: all .6s ease .2s;
+			transition: all .6s ease .2s;
+		}
+
+		.preloader:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			-webkit-animation: preloadBody 2s linear infinite;
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@-webkit-keyframes preloadBody {
+			from {
+				-webkit-transform: translate(-50%, -50%) rotate(0);
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				-webkit-transform: translate(-50%, -50%) rotate(360deg);
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+
+		@keyframes preloadBody {
+			from {
+				-webkit-transform: translate(-50%, -50%) rotate(0);
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				-webkit-transform: translate(-50%, -50%) rotate(360deg);
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+
+</head>
+
+<body>
+	<div class="preloader"></div>
+	<!-- == TOP LINE ================== -->
+	<div class="main-wrapper">
+		<header class="header ">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__contacts">
+                <a href="#" class="header__contact-item">
+                    <img src="img/icons/telegram.svg" alt="">
+                </a>
+                <a href="#" class="header__contact-item">
+                    <img src="img/icons/whatsapp.svg" alt="">
+                </a>
+                <a href="tel:84952272205" class="header__contact-item header__contact-item--phone">
+                    <img src="img/icons/phone.svg" alt="">
+                    <span>8 495 227 22 05</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+ 
+		<!-- == // TOP LINE ================== -->
+		<main class="_page">
+			<section class="promo">
+				<div class="container">
+					<div class="promo__body">
+						<div class="promo__content">
+							<h1>Официальный сайт Анке<span>Био</span></h1>
+							<h3>
+								Станьте нашим <br> постоянным клиентом
+							</h3>
+							<form class="form" data-form action="/">
+								<div class="form__fields">
+									<div class="form__field">
+										<input class="input" type="text" id="name">
+										<label for="name">Введите имя</label>
+									</div>
+									<div class="form__field">
+										<input class="input" data-mask="+7 999 999 99 99" type="text" id="phone">
+										<label for="phone">Введите телефон</label>
+									</div>
+								</div>
+								<div class="form__footer">
+									<button class="btn">Я готов</button>
+								</div>
+							</form>
+						</div>
+						<div class="promo__image">
+							<img src="img/photo/banner.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sites-links">
+				<div class="container">
+					<h2>Актуальные ссылки на наши сайты</h2>
+					<ul class="sites-links__list">
+						<li>
+							<a href="#">
+								<img src="img/logo/logo.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/biohaker.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/pepzakaz.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/telegram-shop.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="social-links">
+				<div class="container">
+					<h3>Социальные сети</h3>
+					<ul class="social-links__list">
+						<li>
+							<a href="#">
+								<img src="img/logo/telegram-logo.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/vkontakte-logo.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/instagram-logo.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="bottom-space"></div>
+		</main>
+	</div>
+</body>
+
+</html>

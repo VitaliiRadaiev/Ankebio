@@ -1,0 +1,48 @@
+.sites-links {
+    margin-top: 12rem;
+
+    @media (max-width: $md2+px) {
+        text-align: center;
+    }
+
+    @media (max-width: $md3+px) {
+        margin-top: 8.8rem;
+    }
+
+    &__list {
+        margin-top: 4.6rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4.6rem;
+
+        @media (max-width: $md3+px) {
+            gap: 3.2rem;
+            margin-top: 3.2rem;
+        }
+
+        & a {
+            display: block;
+
+
+            @media (min-width: 992px) {
+                border-radius: 0.8rem;
+                background-color: transparent;
+                transition: all .2s ease;
+                padding: 1.8rem 2.2rem;
+            }
+
+            & img, & svg {
+                height: 5.2rem;
+                width: auto;
+            }
+
+            @media #{$mouse-device} {
+                &:hover {
+                    background-color: #F0F0F0;
+                }
+            }
+        }
+    }
+}

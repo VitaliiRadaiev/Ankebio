@@ -1,0 +1,101 @@
+.header {
+    &__body {
+        display: flex;
+        align-items: center;
+        padding: 3.2rem 0;
+        justify-content: space-between;
+        gap: 2.4rem 3.2;
+        flex-wrap: wrap;
+
+        @media (max-width: $md3+px) {
+            padding: 2.6rem 0;
+        }
+    }
+
+    &__logo {
+        flex: 0 0 auto;
+        height: 3.4rem;
+
+        & img,
+        & svg {
+            width: auto;
+            height: 100%;
+        }
+
+        @media (max-width: $md3+px) {
+            height: 2.8rem;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__contact-item {
+        font-size: 1.7rem;
+        position: relative;
+        display: block;
+
+        & img,
+        & svg {
+            height: 3.4rem;
+            width: auto;
+            display: block;
+
+            @media (max-width: $md3+px) {
+                height: 3.1rem;
+            }
+        }
+        
+
+        @media (min-width: 768px) {
+            & > img, & > svg, & > span {
+                position: relative;
+                z-index: 2;
+            }
+    
+            &:before {
+                position: absolute;
+                content: '';
+                z-index: 1;
+                top: -1rem;
+                left: -1rem;
+                right: -1rem;
+                bottom: -1rem;
+                border-radius: 3.4rem;
+                background-color: #F0F0F0;
+                opacity: 0;
+                transition: opacity .2s ease;
+    
+            }
+        }
+        
+        @media #{$mouse-device} {
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__contact-item--phone {
+
+
+        @media (min-width: 768px) {
+            margin-left: 1rem;
+            & img,
+            & svg {
+                display: none;
+            }
+        }
+
+        @media (max-width: $md3+px) {
+            & span {
+                display: none;
+            }
+        }
+    }
+}

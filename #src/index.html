@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "Ankebio"
+})
+
+<body>
+	<div class="preloader"></div>
+	<!-- == TOP LINE ================== -->
+	<div class="main-wrapper">
+		@@include('components/header/_header.html',{
+		"mod": ""
+		}) 
+		<!-- == // TOP LINE ================== -->
+		<main class="_page">
+			<section class="promo">
+				<div class="container">
+					<div class="promo__body">
+						<div class="promo__content">
+							<h1>Официальный сайт Анке<span>Био</span></h1>
+							<h3>
+								Станьте нашим <br> постоянным клиентом
+							</h3>
+							<form class="form" data-form action="/">
+								<div class="form__fields">
+									<div class="form__field">
+										<input class="input" type="text" id="name">
+										<label for="name">Введите имя</label>
+									</div>
+									<div class="form__field">
+										<input class="input" data-mask="+7 999 999 99 99" type="text" id="phone">
+										<label for="phone">Введите телефон</label>
+									</div>
+								</div>
+								<div class="form__footer">
+									<button class="btn">Я готов</button>
+								</div>
+							</form>
+						</div>
+						<div class="promo__image">
+							<img src="img/photo/banner.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sites-links">
+				<div class="container">
+					<h2>Актуальные ссылки на наши сайты</h2>
+					<ul class="sites-links__list">
+						<li>
+							<a href="#">
+								<img src="img/logo/logo.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/biohaker.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/pepzakaz.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/telegram-shop.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="social-links">
+				<div class="container">
+					<h3>Социальные сети</h3>
+					<ul class="social-links__list">
+						<li>
+							<a href="#">
+								<img src="img/logo/telegram-logo.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/vkontakte-logo.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/logo/instagram-logo.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div class="bottom-space"></div>
+		</main>
+	</div>
+</body>
+
+</html>

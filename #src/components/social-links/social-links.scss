@@ -1,0 +1,46 @@
+.social-links {
+    margin-top: 8rem;
+
+    @media (max-width: $md3+px) {
+        margin-top: 7.4rem;
+    }
+
+    &__list {
+        margin-top: 1.4rem;
+        display: flex;
+        gap: 1.8rem;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        @media (max-width: $md3+px) {
+            gap: 4rem;
+            margin-top: 3.2rem;
+            flex-direction: column;
+        }
+        & a {
+            display: block;
+            align-items: center;
+            justify-content: center;
+
+
+            @media (min-width: 992px) {
+                padding: 1.8rem 2.2rem;
+                border-radius: 0.8rem;
+                background-color: transparent;
+                transition: background-color .2s ease;
+            }
+
+            & img, & svg {
+                height: 4rem;
+                width: auto;
+            }
+
+            @media #{$mouse-device} {
+                &:hover {
+                    background-color: #F0F0F0;
+                }
+            }
+        }
+    }
+}
